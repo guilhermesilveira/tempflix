@@ -1,0 +1,105 @@
+body {
+    background: #000000;
+    color: rgb(255, 255, 255);
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    border-bottom: 1px solid blue;
+    margin-bottom: 32px;
+}
+
+.header-content {
+    padding: 20px 16px;
+}
+
+.logo {
+    /* qual eh a familia */
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 32px;
+    color: blue;
+}
+
+.hero {
+    max-height: 600px;
+
+    padding: 0 16px;
+    position: relative;
+    /* por padrao sem flex, cima, agora sera flex, padrao lado */
+    display: flex;
+    justify-content: center;
+    padding: 80px 40px;
+    overflow: hidden;
+}
+
+.hero-background {
+    /* to achando que é melhor aplciar o opacity fora */
+
+    /* não vai explodir o tamanho do pai, poderia se não tivesse... */
+    max-width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+.hero-call h1 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 60px;
+}
+
+.hero-call p {
+    font-size: 32px;
+}
+
+.hero-video iframe {
+    /* escolher outro blue que lembre o neon */
+    border: 1px solid blue;
+    border-radius: 10px;
+}
+
+.categoria {
+    padding: 30px 16px 0px 16px;
+}
+
+.categoria-conteudo {
+    overflow-x: auto;
+    display: flex;
+    max-width: 100%;
+    gap: 10px;
+}
+
+/* discutir o perigo disso */
+.categoria-conteudo img {
+    transition: opacity 0.3s ease 0s;
+    border: 1px solid blue;
+    border-radius: 10px;
+    height: 200px;
+}
+
+.categoria-conteudo img:hover {
+    opacity: 0.5;
+}
+
+.categoria-damas {
+    color: red
+}
+
+.categoria-xadrez {
+    color: green
+}
+
+footer {
+    border-top: 1px solid blue;
+    margin-top: 32px;
+    padding-top: 32px;
+}
+
+.footer-content {
+    text-align: center;
+}
