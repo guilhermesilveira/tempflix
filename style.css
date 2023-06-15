@@ -25,6 +25,15 @@ header {
 }
 
 .hero {
+    /* background-image: url(imagens/chess.png); */
+    /* background-size: cover; */
+    /* background-position: center; */
+
+    /* cor que contrasta e combina com o video */
+    background-color: rgba(228, 12, 12, 0.623);
+
+    /* duvida: background image como desafio */
+
     max-height: 600px;
 
     padding: 0 16px;
@@ -33,19 +42,6 @@ header {
     display: flex;
     justify-content: center;
     padding: 80px 40px;
-    overflow: hidden;
-}
-
-.hero-background {
-    /* to achando que é melhor aplciar o opacity fora */
-
-    /* não vai explodir o tamanho do pai, poderia se não tivesse... */
-    max-width: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: -1;
-    opacity: 0.2;
 }
 
 .hero-call h1 {
@@ -74,12 +70,20 @@ header {
     gap: 10px;
 }
 
+
 /* discutir o perigo disso */
 .categoria-conteudo img {
     transition: opacity 0.3s ease 0s;
-    border: 1px solid blue;
     border-radius: 10px;
     height: 200px;
+}
+
+.categoria-xadrez img {
+    border: 1px solid blue;
+}
+
+.categoria-damas img {
+    border: 1px solid yellow;
 }
 
 .categoria-conteudo img:hover {
@@ -102,4 +106,33 @@ footer {
 
 .footer-content {
     text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* para saber mais... */
+.categoria-header h2 {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.categoria-damas .categoria-header h2 {
+    background-color: green;
+    color: white;
+}
+
+.categoria-xadrez .categoria-header h2 {
+    background-color: red;
+    color: white;
 }
