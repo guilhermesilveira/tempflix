@@ -1,6 +1,9 @@
 Falta:
 - fonte e tamanhos
 
+Ensinar:
+- inspect
+
 Duvidas e decisões:
 
 - opacity: duvida
