@@ -14,10 +14,12 @@ body {
 }
 
 .content {
-    max-width: 1200px;
-    margin: 0 auto;
     padding-left: 5%;
     padding-right: 5%;
+
+    /* CENTRALIZA E LIMITA */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 header {
@@ -34,9 +36,10 @@ header {
 .hero {
     /* cor que contrasta e combina com o video */
     background-color: var(--main-video);
-    max-height: 600px;
 
-    position: relative;
+    /* NAO USO NUNCA */
+    /* max-height: 600px; */
+    /* position: relative; */
 
     /* por padrao sem flex, cima, agora sera flex, padrao lado */
     display: flex;
@@ -58,9 +61,22 @@ header {
     font-size: 20px;
 }
 
-.hero-video iframe {
-    border: 1px solid var(primary);
+footer {
+    border-top: 2px solid var(--primary);
+    margin-top: 32px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
 }
+
+
+
+
+
+
+
+
+
 
 .categoria-conteudo {
     overflow-x: auto;
@@ -98,14 +114,6 @@ header {
 
 .categoria-xadrez {
     color: green
-}
-
-footer {
-    border-top: 2px solid var(--primary);
-    margin-top: 32px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
 }
 
 .categoria h2 {
